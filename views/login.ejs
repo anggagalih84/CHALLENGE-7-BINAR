@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/login.css">
+    <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+        
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button[type="cancel"] {
+            background-color: #f44336;
+        }
+        
+        button[type="sign up"] {
+            background-color: #FFA500;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        td {
+            text-align: right;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/login" method="POST">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" name="username" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+                <td align="center"><button type="submit">Login</button></td>
+                <td align="center"><button type="cancel">Cancel</button> </td>
+                <td align="center"><button type="sign up">Sign Up</button> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
